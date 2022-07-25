@@ -18,7 +18,7 @@ try:
                 data=f.read()
             f.close()
             menu=ast.literal_eval(data)
-            print(menu)
+            print("MENU: "menu)
             admin_crawler = True
             while admin_crawler:
                 adm_choice = input("Choose the options of admin panel 1.ADD NEW ITEM 2.EDIT ITEM 3.VIEW INVENTORY 4.REMOVE ITEM 5.EXIT")
