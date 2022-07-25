@@ -1,0 +1,1 @@
+{1: {'FoodID': 1, 'FoodName': 'Rasmalai', 'Price': 34, 'Discount': 5, 'Stock': 14}, 2: {'FoodID': 2, 'FoodName': 'Jalebi', 'Price': 150, 'Discount': 9, 'Stock': 20}, 3: {'FoodID': 3, 'FoodName': 'Cake', 'Price': 300, 'Discount': 12, 'Stock': 54}, 4: {'FoodName': 'malai', 'FoodID': 4, 'Price': 35, 'Discount': 3, 'Stock': 230}}
