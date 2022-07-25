@@ -7,7 +7,7 @@ menu=ast.literal_eval(data)
 
 def add_new_food():
     global t
-    t=len(menu)+1
+    t=max(menu.keys())+1
     foodid=t
     foodname = input("Enter the food name: ")
     price = int(input("Enter the price of the food: "))
