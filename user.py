@@ -58,15 +58,9 @@ class User(object):
     def update(self):
         updatetf=True
         while updatetf:
-            updateidup=int(input('''What do you want to change?
-                           1.Name
-                           2.Address
-                           3.Phone no
-                           4.Email
-                           5.Password
-                           6.Exit
+            updateidup=int(input('''What do you want to change?1.Name  2.Address   3.Phone no  4.Email 5.Passwor  6.Exit
                            enter no.'''))
-            #updateidup=updateid.upper()
+            
             
             if updateidup==1:
                 newname=input('New Name: ')
@@ -96,26 +90,27 @@ class User(object):
             
     def place_order(self):
         menu=d
-        print(menu)
+        #print(menu)
         print("What you want to order here in the Inventory")
         print(ad.show_menu())
         user_choice = int(input("If you want to order then select 1.YES 2.NO"))
         if user_choice == 1:
             n=int(input("Enter how many  food items do you want to Order:"))
-            x,y,n,m=0,0,0,0
+            x,y,v,w=0,0,0,0
             for i in range(n):           
                     foodid = int(input("Enter the Food id here: "))
                     quan = int(input("Enter the quantity of the food: "))
-                    n=menu[foodid]["Price"] * quan
-                    m=menu[foodid]["Discount"] * quan
+                    v=menu[foodid]["Price"] * quan
+                    w=menu[foodid]["Discount"] * quan
                     x += menu[foodid]["Price"] * quan
                     y+=menu[foodid]["Discount"] * quan
                     self.order_history[foodid] = {
                         "Food Name": menu[foodid]["FoodName"],
                         "Price": menu[foodid]["Price"],
-                        "Discount":menu[foodid]["Discount"],
+                        "DiscountPerItem":menu[foodid]["Discount"],
                         "Quantity": quan,
-                        "total cost": n-m
+                        "TotalDiscountOneItem":w,
+                        "total cost": v-w
                     }
                     
                        
