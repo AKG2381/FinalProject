@@ -48,16 +48,17 @@ def edit_from_food():
     b = int(input("Enter the price of food: "))
     d = int(input("Enter the discount on  the food: "))
     c = int(input("Enter the stock of the food: "))
-    if b>d:
-        pass
-    else:
-        print("discount value is more than price")
-    
-    menu[foodid]["FoodName"] = a
-    menu[foodid]["Price"] = b
-    menu[foodid]["Discount"]=d
-    menu[foodid]["Stock"] = c
-    
+    X = True
+    while X:
+        if b>d:
+            menu[foodid]["FoodName"] = a
+            menu[foodid]["Price"] = b
+            menu[foodid]["Discount"]=d
+            menu[foodid]["Stock"] = c
+            X=False
+        else:
+            print("discount value is more than price")
+            print("Enter Valid Values")
     a=open("menu.txt",'w+')
     a.write(str(menu))
     a.close()
