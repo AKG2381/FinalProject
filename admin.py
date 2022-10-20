@@ -12,10 +12,17 @@ def add_new_food():
     foodname = input("Enter the food name: ")
     price = int(input("Enter the price of the food: "))
     discount=int(input("Enter the discount on the food: "))
-    if discount<price :
-        pass
-    else:
-        ("discount must be less than price")
+    Y=True
+    while Y:
+        if discount<price :
+            Y=False
+        else:
+            ("discount must be less than price")
+            discount=int(input("Enter the discount on the food again: "))
+            if discount<price:
+                Y=False
+            else:
+                Y=True           
     stock = int(input("Enter the stock value of food: "))
     if foodname in menu.keys():
         print(" food  is Present Already ")
