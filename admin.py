@@ -89,7 +89,7 @@ def remove_food():
           show()
     
     menu.pop(d)
-    a=open("inventoryfile.txt",'w')
+    a=open("menu.txt",'w')
     a.write(str(menu))
     a.close()
     print('Removed food Successfully')
