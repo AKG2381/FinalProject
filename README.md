@@ -11,6 +11,6 @@ Project is Online Food Ordering Service Usnig Pythom
 
 5.By logging in as admin ,can edit the menu.
 
-6.By registering, and logging un as user can order the food.
+6.By registering, and logging in as user can order the food.
 
-7.Need to run main.py module for function the whole project
+7.Need to run main.py module for functioning project
